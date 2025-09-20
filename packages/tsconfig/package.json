@@ -1,0 +1,8 @@
+{
+    "name": "@saebom/tsconfig",
+    "version": "1.0.0",
+    "scripts": {
+        "version": "pnpm version",
+        "deploy": "pnpm publish"
+    }
+}
