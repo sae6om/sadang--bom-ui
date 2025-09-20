@@ -11,6 +11,7 @@ export interface TextProps extends HTMLAttributes<HTMLDivElement> {
     color?: Color
     size?: 't1' | 't2' | 't3' | 't4' | 't5' | 't6' | 't7'
     bold?: boolean
+    inline?: boolean
 }
 
 // ...props를 써야 div의 기본속성을 쓸 수 있다.
