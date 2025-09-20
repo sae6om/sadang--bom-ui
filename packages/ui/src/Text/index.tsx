@@ -15,7 +15,14 @@ export interface TextProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 // ...props를 써야 div의 기본속성을 쓸 수 있다.
-export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = false, inline, ...props}: TextProps = {}) {
+export function Text({
+    children,
+    color = 'adaptiveGrey900',
+    size = 't3',
+    bold = false,
+    inline,
+    ...props
+}: TextProps = {}) {
     if (typeof children !== 'string') {
         return (
             <div
@@ -24,9 +31,9 @@ export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = f
                     [`typography-${size}`]: true,
                     bold,
                 })}
-                style={(
-                    display: inline === true ? 'inline' : 'block'
-                )}
+                style={{
+                    display: inline === true ? 'inline' : 'block',
+                }}
                 {...props}
             >
                 {children}
@@ -41,9 +48,9 @@ export function Text({children, color = 'adaptiveGrey900', size = 't3', bold = f
                 [`typography-${size}`]: true,
                 bold,
             })}
-            style={(
-                    display: inline === true ? 'inline' : 'block'
-                )}
+            style={{
+                display: inline === true ? 'inline' : 'block',
+            }}
             {...props}
         >
             {children.split('\\n').map((text: string, idx: number) => (
