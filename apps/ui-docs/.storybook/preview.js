@@ -1,4 +1,4 @@
-import _ from '../node_modules/@saebom/ui/dist/styles/design-system.scss'
+import _ from '../node_modules/@sadang-study/ui/dist/styles/design-system.scss'
 
 // 트리쉐이킹
 console.log('_', _) // eslint-disable-line
